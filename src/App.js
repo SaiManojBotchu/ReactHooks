@@ -2,9 +2,10 @@ import React from 'react';
 // import CounterClass from './CounterClass';
 // import CounterHooks from './CounterHooks';
 // import TogglerHook from './TogglerHook';
-import FormClass from './FormClass';
-import FormHooks from './FormHooks';
-import FormInputStateHook from './FormInputStateHook';
+// import FormClass from './FormClass';
+// import FormHooks from './FormHooks';
+// import FormInputStateHook from './FormInputStateHook';
+import Clicker from './Clicker';
 import './App.css';
 
 function App() {
@@ -12,10 +13,11 @@ function App() {
     <div className='App'>
       {/* <CounterClass />
       <CounterHooks />
-      <TogglerHook /> */}
+      <TogglerHook />
       <FormClass />
       <FormHooks />
-      <FormInputStateHook />
+      <FormInputStateHook /> */}
+      <Clicker />
     </div>
   );
 }
