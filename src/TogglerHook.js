@@ -1,7 +1,7 @@
 import React from 'react';
 import useToggle from './hooks/useToggle';
 
-const Toggler = () => {
+const TogglerHook = () => {
   const [isHappy, toggleIsHappy] = useToggle(true);
   const [isHeartBroken, toggleIsHeartBroken] = useToggle(false);
   return (
@@ -12,4 +12,4 @@ const Toggler = () => {
   );
 };
 
-export default Toggler;
+export default TogglerHook;
