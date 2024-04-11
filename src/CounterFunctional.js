@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
 
-const CounterHooks = () => {
+const CounterFunctional = () => {
   const [count, setCount] = useState(0);
+
+  const incrementCounter = () => setCount(st => st + 1);
+
   return (
     <div>
       <h1>React Hooks</h1>
       <h1>The count is: {count}</h1>
-      <button onClick={() => setCount(count + 1)}>Add 1</button>
+      <button onClick={incrementCounter}>Add 1</button>
     </div>
   );
 };
 
-export default CounterHooks;
+export default CounterFunctional;

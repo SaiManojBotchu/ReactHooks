@@ -1,22 +1,23 @@
 import React from 'react';
 // import CounterClass from './CounterClass';
-// import CounterHooks from './CounterHooks';
-// import TogglerHook from './TogglerHook';
+// import CounterFunctional from './CounterFunctional';
 // import FormClass from './FormClass';
+// import FormFunctional from './FormFunctional';
 // import FormHooks from './FormHooks';
-// import FormInputStateHook from './FormInputStateHook';
+// import ToggleHooks from './ToggleHooks';
 import Clicker from './Clicker';
+
 import './App.css';
 
 function App() {
   return (
     <div className='App'>
       {/* <CounterClass />
-      <CounterHooks />
-      <TogglerHook />
+      <CounterFunctional />
       <FormClass />
-      <FormHooks />
-      <FormInputStateHook /> */}
+      <FormFunctional />
+      <FormHooks /> */}
+      {/* <ToggleHooks /> */}
       <Clicker />
     </div>
   );

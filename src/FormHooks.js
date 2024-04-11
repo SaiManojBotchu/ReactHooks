@@ -1,11 +1,19 @@
-import React, { useState } from 'react';
+
+import React from 'react';
+import useInputState from './hooks/useInputState';
 
 const FormHooks = () => {
-  const [email, setEmail] = useState('');
+  const [email, updateEmail, resetEmail] = useInputState('');
+  const [password, updatePassword, resetPassword] = useInputState('');
+
   return (
     <div>
-      <h1>You entered: {email}</h1>
-      <input type='text' value={email} onChange={(evt) => setEmail(evt.target.value)} />
+      <h1>Email: {email}</h1>
+      <input type='text' value={email} onChange={updateEmail} />
+      <button onClick={resetEmail}>Reset</button>
+      <h1>Password: {password}</h1>
+      <input type='text' value={password} onChange={updatePassword} />
+      <button onClick={resetPassword}>Reset</button>
     </div>
   );
 };
